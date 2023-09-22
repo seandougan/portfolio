@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #55917F;
+    --accent-color: #6BAB90;
+    --warn-color: #FF9100;
+    --text-color: #E1F0C4;
+    --secondary-color: #5E4C5A;
+    --primary: var(--primary-color);
+    --secondary: var(--accent-color);
+    --success: var(--secondary-color);
+    --danger: var(--warn-color);
+    --signature-font: 'Homemade Apple', cursive;
+    --signature-2-font: 'Rock Salt', cursive;
+    --app-text-font: 'Ramabhadra', sans-serif;
+    --app-text-font: 'Oleo Script Swash Caps', cursive;
+}
+main {
+    height: 90vh;
+    width: 95vw;
+    margin-bottom: -5vh;
+}
+header {
+    height: 5vh;
+}
+footer {
+    height: 5vh;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1); /* Start with normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Increase size midway */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
+}
+@keyframes handwriting {
+            0% {
+                stroke-dasharray: 0;
+                stroke-dashoffset: 100%;
+                fill-opacity: 0;
+            }
+            100% {
+                stroke-dasharray: 100%;
+                stroke-dashoffset: 0;
+                fill-opacity: 1;
+            }
+        }
+@keyframes fadeInDropDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+ .nav-link {
+    color: var(--text-color);
+}
+.nav-link:hover {
+    color: var(--accent-color);
+}
+.navbar {
+    width: 100vw;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:active .nav-link,
+.navbar-nav .nav-item.visited .nav-link {
+    color: var(--accent-color);
+}
+#signature2 {
+    padding-top: 5vh;
+    font-size: 6vh;
+    font-family: var(--signature-2-font);
+}
+.handwriting-text-primary {
+            font-size: 4em;
+            font-family: var(--signature-font);
+            stroke: var(--text-color);
+            fill: var(--text-color);
+            stroke-dasharray: 0;
+            stroke-dashoffset: 100%;
+        }
+h3 svg {
+                width: 20em;
+        }
+
+textPath {
+    font-family: var(--signature-font);
+}
+#signature {
+    padding-top: 25vh;
+}
+
+.fadeInDropDown {
+    animation: fadeInDropDown 2.5s alternate;
+}
+.pulsate {
+   animation: pulsate 2.5s infinite;
+    animation-delay: 2.5s;
+}
