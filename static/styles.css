@@ -13,6 +13,10 @@
     --app-text-font-1: 'Ramabhadra', sans-serif;
     --app-text-font: 'Oleo Script Swash Caps', cursive;
     --header-font: 'Sansita Swashed', cursive;
+    --off-text-color: #0e0f0f;
+}
+.off-text-color{
+    font-size: 2em;
 }
 main {
     width: 100vw;
@@ -60,6 +64,21 @@ footer {
         transform: translateY(0);
     }
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    animation: fadeIn 2s ease;
+}
+
+.fadeIn-2 {
+    animation: fadeIn 4s ease;
+}
 body {
     background: var(--secondary-color);
     color: var(--text-color);
@@ -103,14 +122,19 @@ body {
    animation: pulsate 2.5s infinite;
     animation-delay: 2.5s;
 }
-.work-experience-content, .education-content{
+.work-experience-content{
     width: 100vw;
-    margin-left: 33vw;
+    margin-left: 25vw;
+    margin-top: 5vh;
+}
+.education-content {
+    width: 40vw;
+     margin-left: 33vw;
     margin-top: 5vh;
 }
 .two-column-list {
     columns: 2;
-    column-gap: 5px;
+    column-gap: 20px;
   }
 .about-me-card {
     display: flex;
@@ -229,9 +253,21 @@ nav div ul li {
   animation: slideInFromRight 2s ease-in-out;
 }
 .work-experience-content div p {
-    width: 35vw;
+    width: 45vw;
 }
-
+.work-experience-header, .education-header {
+    margin-top: 5vh;
+    font-size: 4em;
+}
+.font-2-em {
+    font-size: 1.25em;
+}
+#blog-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
