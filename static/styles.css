@@ -10,13 +10,13 @@
     --danger: var(--warn-color);
     --signature-font: 'Homemade Apple', cursive;
     --signature-2-font: 'Rock Salt', cursive;
-    --app-text-font: 'Ramabhadra', sans-serif;
+    --app-text-font-1: 'Ramabhadra', sans-serif;
     --app-text-font: 'Oleo Script Swash Caps', cursive;
+    --header-font: 'Sansita Swashed', cursive;
 }
 main {
-    height: 90vh;
-    width: 95vw;
-    margin-bottom: -5vh;
+    width: 100vw;
+    min-height:65vh;
 }
 header {
     height: 5vh;
@@ -29,11 +29,14 @@ footer {
     transform: scale(1); /* Start with normal size */
   }
   50% {
-    transform: scale(1.1); /* Increase size midway */
+    transform: scale(0.9); /* Increase size midway */
   }
   100% {
     transform: scale(1); /* Back to normal size */
   }
+}
+#raiseHeaderAbout {
+    margin-top:5vh;
 }
 @keyframes handwriting {
             0% {
@@ -68,7 +71,9 @@ body {
     color: var(--accent-color);
 }
 .navbar {
+    height: 5vh;
     width: 100vw;
+
 }
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:active .nav-link,
@@ -88,17 +93,9 @@ body {
             stroke-dasharray: 0;
             stroke-dashoffset: 100%;
         }
-h3 svg {
-                width: 20em;
-        }
-
-textPath {
-    font-family: var(--signature-font);
-}
 #signature {
     padding-top: 25vh;
 }
-
 .fadeInDropDown {
     animation: fadeInDropDown 2.5s alternate;
 }
@@ -106,3 +103,139 @@ textPath {
    animation: pulsate 2.5s infinite;
     animation-delay: 2.5s;
 }
+.work-experience-content, .education-content{
+    width: 100vw;
+    margin-left: 33vw;
+    margin-top: 5vh;
+}
+.two-column-list {
+    columns: 2;
+    column-gap: 5px;
+  }
+.about-me-card {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-left: 1vw;
+}
+img {
+    height: auto;
+    max-width:30vw;
+}
+.about-me-content {
+        display: flex;
+    flex-direction: column;
+        flex: 2;
+}
+@media (max-width: 768px) {
+    .about-me-card {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.app-text-font-1 {
+    font-family: var(--app-text-font-1);
+}
+
+.app-text-font {
+    font-family: var(--app-text-font);
+}
+
+.text-color-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-color-secondary {
+    color: var(--secondary-color)  !important;
+}
+
+.text-color-accent {
+    color: var(--accent-color)  !important;
+}
+.text-color-warn {
+    color: var(--warn-color)  !important;
+}
+.about-me-font-size-header {
+    font-size: 4em;
+    display: inline;
+}
+.about-me-font-size-content {
+    font-size: 1.6em;
+    width: 45vw;
+    margin-left: 5vw;
+}
+.header-font {
+    font-family: var(--header-font)  !important;
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+
+button {
+
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+.moveUp {
+    margin-top: -6vh;
+    margin-left: 7vw;
+}
+nav div ul li {
+    font-size: 1.5em;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 1s ease-in-out;
+}
+.slide-in-right-15 {
+  animation: slideInFromRight 1.5s ease-in-out;
+}
+.slide-in-right-18 {
+  animation: slideInFromRight 1.8s ease-in-out;
+}
+.slide-in-right-2 {
+  animation: slideInFromRight 2s ease-in-out;
+}
+.work-experience-content div p {
+    width: 35vw;
+}
+
+
+
+
+
+
+
+
