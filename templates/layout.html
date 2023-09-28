@@ -7,11 +7,11 @@
         <meta name="description" content="{{ description}}">
         <meta name="keywords" content="{{ keywords }}">
         <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://www.seandougan.ca/{{ your-page-url }}">
+        <link rel="canonical" href="https://www.seandougan.ca/{{ yourpageurl }}">
         <title>{{ page_title }}</title>
         <meta property="og:title" content="{{ page_title }}">
         <meta property="og:description" content="{{ description}}">
-        <meta property="og:url" content="https://www.seandougan.ca/{{ your-page-url }}">
+        <meta property="og:url" content="https://www.seandougan.ca/{{ yourpageurl }}">
         <meta property="og:type" content="website">
         <meta property="og:image" content="/static/twitter_logo_portfolio.png">
         <meta property="og:image:type" content="image/jpeg">
@@ -28,6 +28,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
         <link href="/static/styles.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="/static/icons8-home-windows-11-color-16.ico">
+            <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SHC8RSE02W"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-SHC8RSE02W');
+        </script>
     </head>
     <body>
         {% include 'header.html' %}

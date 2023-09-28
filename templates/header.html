@@ -1,23 +1,23 @@
 <header class="nav text-center">
-    <nav class="navbar navbar-expand-sm justify-content-center">
+    <nav class="navbar navbar-expand justify-content-center"> <!-- Use navbar-expand class without specifying a breakpoint -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto"> <!-- Use mx-auto to center the nav items -->
-                <li class="nav-item active">
+                <li class="nav-item {{ 'active' if page == 'index' else '' }}">
                     <a class="nav-link" href="/">Introduction</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="/aboutme">About Me</a>
+                <li class="nav-item {{ 'active' if page == 'aboutme' else '' }}">
+                    <a class="nav-link" href="/aboutme">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/workexperience#">Work Experience</a>
+                <li class="nav-item {{ 'active' if page == 'workexperience' else '' }}">
+                    <a class="nav-link" href="/workexperience">Work</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{ 'active' if page == 'projects' else '' }}">
                     <a class="nav-link" href="/projects">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{ 'active' if page == 'education' else '' }}">
                     <a class="nav-link" href="/education">Education</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{ 'active' if page == 'blog' else '' }}">
                     <a class="nav-link" href="/blog">Blog</a>
                 </li>
             </ul>

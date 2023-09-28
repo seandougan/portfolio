@@ -114,6 +114,7 @@ body {
         }
 #signature {
     padding-top: 25vh;
+    height: 95vh !important;
 }
 .fadeInDropDown {
     animation: fadeInDropDown 2.5s alternate;
@@ -268,7 +269,75 @@ nav div ul li {
     justify-content: center;
     align-items: center;
 }
+@media(min-width: 0) and (max-width: 600px){
+nav div ul li {
+    font-size: .6em !important;
+}
+    svg {
+        height: 350px;
+        width: 350px;
+    }
 
+    #signature {
+    padding-top: 0;
+    height: 45vh !important;
+}
+
+    #signature2 {
+        margin-top: -20vh;
+    }
+    .about-me-font-size-header {
+    font-size: 1.5em;
+    display: inline;
+}
+    .about-me-font-size-content {
+    font-size: 1em;
+    width: 100vw;
+}
+    .work-experience-header, .education-header {
+    margin-top: 5vh;
+    font-size: 1.8em;
+}
+.workexperience p{
+    font-size: 1em !important;
+}
+.projects p {
+    font-size: 0.8em !important;
+}
+.education-content {
+    width: 100vw;
+     margin-left: 1vw;
+    margin-top: 5vh;
+}
+
+}
+@media(min-width: 601px) and (max-width: 810px){
+svg {
+        height: 500px;
+        width: 500px;
+    }
+
+    #signature {
+    padding-top: 0;
+    height: 25vh !important;
+}
+
+    #signature2 {
+        margin-top: -19vh;
+    }
+    .about-me-font-size-header {
+    font-size: 2em;
+    display: inline;
+}
+     .about-me-font-size-content {
+    font-size: 1em;
+}
+     .education-content {
+    width: 95vw;
+     margin-left: 5vw;
+    margin-top: 5vh;
+}
+}
 
 
 
